@@ -27,7 +27,7 @@ export const experience = [
   {
     company: "TuroCrate.ai",
     role: "ML Engineer",
-    period: "Dec 9, 2025",
+    period: "Dec 9, 2025 to Apr 2026",
     location: "Remote · Mumbai",
     bullets: [
       "Designing and shipping ML systems at TuroCrate, focused on production data pipelines and inference services.",
