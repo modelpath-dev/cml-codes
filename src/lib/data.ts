@@ -28,7 +28,7 @@ export const experience = [
     company: "TuroCrate.ai",
     role: "ML Engineer",
     period: "Dec 9, 2025",
-    location: "Bengaluru, IN",
+    location: "Remote · Mumbai",
     bullets: [
       "Designing and shipping ML systems at TuroCrate, focused on production data pipelines and inference services.",
       "Owning the full model lifecycle: training, evaluation, deployment, and observability across the platform.",
@@ -83,13 +83,13 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    title: "TuroQuant",
-    tag: "Computer Vision · Bio",
+    title: "Whisper Hindi ASR",
+    tag: "Speech · LoRA Fine-tuning",
     year: "2025",
     description:
-      "IHC image quantification platform using the DeepLIIF API. Supports KI67, ER, and PR stains with cell counting, H-score, and Allred scoring. Handles multi-page TIFs, WSI formats, and live camera input with ROI selection. Video pipeline uses phase-correlation deduplication for overlapping frames.",
-    stack: ["Python", "Streamlit", "OpenCV", "DeepLIIF"],
-    link: "https://turoquant.vercel.app",
+      "Fine-tunes OpenAI Whisper-small for Hindi speech recognition using LoRA (PEFT) on Mozilla Common Voice 17, training under 2% of parameters to measure WER/CER gains over the baseline. Type-hinted library with YAML-driven config, runs as fast CPU/MPS smoke tests locally and full fp16 training on a Colab T4.",
+    stack: ["Python", "PyTorch", "Whisper", "PEFT", "HuggingFace"],
+    link: "https://github.com/modelpath-dev/whisper-finetune",
     accent: "from-[#0E7490] to-[#22D3EE]",
   },
   {
