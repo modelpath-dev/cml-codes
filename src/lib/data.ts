@@ -83,34 +83,24 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    title: "Whisper Hindi ASR",
-    tag: "Speech · LoRA Fine-tuning",
-    year: "2025",
+    title: "BitWiser",
+    tag: "Local LLMs · 1-bit Quantization",
+    year: "2026",
     description:
-      "Fine-tunes OpenAI Whisper-small for Hindi speech recognition using LoRA (PEFT) on Mozilla Common Voice 17, training under 2% of parameters to measure WER/CER gains over the baseline. Type-hinted library with YAML-driven config, runs as fast CPU/MPS smoke tests locally and full fp16 training on a Colab T4.",
-    stack: ["Python", "PyTorch", "Whisper", "PEFT", "HuggingFace"],
-    link: "https://github.com/modelpath-dev/whisper-finetune",
-    accent: "from-[#0E7490] to-[#22D3EE]",
-  },
-  {
-    title: "ScholarGraph",
-    tag: "RAG · Knowledge Graphs",
-    year: "2025",
-    description:
-      "Transforms research papers into interactive knowledge graphs. GPT-4o-mini extracts concepts, ChromaDB and Sentence-Transformers handle semantic linking across PDFs, and Mermaid.js with svg-pan-zoom render explorable graphs in the browser.",
-    stack: ["FastAPI", "GPT-4o", "ChromaDB", "Mermaid"],
-    link: "https://github.com/modelpath-dev/Scholar_Paper",
-    accent: "from-[#5C7561] to-[#8FA890]",
-  },
-  {
-    title: "Crucible",
-    tag: "AI · Desktop IDE",
-    year: "2025",
-    description:
-      "Lightweight AI-powered desktop IDE built on Electron and React. Monaco editor, native Git, integrated terminal (PTY), ripgrep search, and side-by-side diffs. Multi-provider AI chat across Claude, GPT-4o, and Gemini.",
-    stack: ["Electron", "TypeScript", "Monaco", "Zustand"],
-    link: "https://github.com/modelpath-dev/Crucible",
+      "One-click 1-bit (IQ1_S) compressor for any local LLM on Apple Silicon. Auto-discovers Ollama and on-disk GGUF models, runs importance-matrix calibration, and quantizes via llama.cpp with Metal — shrinking Llama-3.1-8B from 16.1 GB to 2.19 GB (7.4×) at ~51 tok/s on 3.1 GB of RAM. Side-by-side playground streams live tokens/sec, RAM, and bandwidth.",
+    stack: ["Python", "FastAPI", "llama.cpp", "React", "Metal"],
+    link: "https://github.com/modelpath-dev/Bitwiser",
     accent: "from-[#7C6A8A] to-[#C4A6E8]",
+  },
+  {
+    title: "Facematch",
+    tag: "Computer Vision · Identity",
+    year: "2025",
+    description:
+      "Face verification pipeline that compares faces across images, PDFs, and Excel documents. RetinaFace detection with quality filtering and automatic rotation handling, ArcFace embeddings via DeepFace, and cosine-similarity matching with configurable thresholds — producing detailed reports with per-document confidence scores.",
+    stack: ["Python", "DeepFace", "ArcFace", "RetinaFace", "OpenCV"],
+    link: "https://github.com/modelpath-dev/Facematch",
+    accent: "from-[#5C7561] to-[#8FA890]",
   },
   {
     title: "Vocat",
@@ -121,6 +111,16 @@ export const projects: Project[] = [
     stack: ["React", "Python", "Whisper", "ElevenLabs"],
     link: "https://github.com/modelpath-dev/Vocat",
     accent: "from-[#B45309] to-[#F59E0B]",
+  },
+  {
+    title: "Whisper Hindi ASR",
+    tag: "Speech · LoRA Fine-tuning",
+    year: "2025",
+    description:
+      "Fine-tunes OpenAI Whisper-small for Hindi speech recognition using LoRA (PEFT) on Mozilla Common Voice 17, training under 2% of parameters to measure WER/CER gains over the baseline. Type-hinted library with YAML-driven config, runs as fast CPU/MPS smoke tests locally and full fp16 training on a Colab T4.",
+    stack: ["Python", "PyTorch", "Whisper", "PEFT", "HuggingFace"],
+    link: "https://github.com/modelpath-dev/whisper-finetune",
+    accent: "from-[#0E7490] to-[#22D3EE]",
   },
 ];
 
