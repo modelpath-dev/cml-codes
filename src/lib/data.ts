@@ -83,7 +83,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    title: "BitWiser",
+    title: "BitWiser-1q1",
     tag: "Local LLMs · 1-bit Quantization",
     year: "2026",
     description:
