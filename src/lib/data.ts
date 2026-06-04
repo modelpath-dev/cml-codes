@@ -89,7 +89,7 @@ export const projects: Project[] = [
     description:
       "One-click 1-bit (IQ1_S) compressor for any local LLM on Apple Silicon. Auto-discovers Ollama and on-disk GGUF models, runs importance-matrix calibration, and quantizes via llama.cpp with Metal — shrinking Llama-3.1-8B from 16.1 GB to 2.19 GB (7.4×) at ~51 tok/s on 3.1 GB of RAM. Side-by-side playground streams live tokens/sec, RAM, and bandwidth.",
     stack: ["Python", "FastAPI", "llama.cpp", "React", "Metal"],
-    link: "https://github.com/modelpath-dev/Bitwiser",
+    link: "https://github.com/modelpath-dev/Bitwiser-1q1",
     accent: "from-[#7C6A8A] to-[#C4A6E8]",
   },
   {
