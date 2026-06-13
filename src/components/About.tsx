@@ -19,7 +19,7 @@ export default function About() {
           index="02"
           label="About"
           title="I bridge the gap between research and production."
-          description="Currently a final-year CSE student at VIT Vellore, with internships at ISRO, IIT Ropar, and AI startups. I obsess over the path from notebook to deployed system: latency, model size, retrieval quality, and the boring infra glue that makes models actually useful."
+          description="Currently a final-year CSE student at VIT Vellore, with internships at ISRO, IIT Ropar, IIT Bombay, and AI startups. I obsess over the path from notebook to deployed system: latency, model size, retrieval quality, and the boring infra glue that makes models actually useful."
         />
 
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-start">
@@ -30,11 +30,6 @@ export default function About() {
               Replacing a brittle OCR script with a YOLO + PaddleOCR pipeline that handles
               real-world engineering drawings.
             </p>
-            <p>
-              When I'm not training models, I'm writing Go services, exploring distributed
-              systems, or organizing technical workshops with IEEE SPS at VIT.
-            </p>
-
             <div className="grid grid-cols-2 gap-6 pt-6 border-t border-border">
               {facts.map((f, i) => (
                 <motion.div

@@ -30,15 +30,15 @@ export const experience = [
     period: "Dec 2025 to Apr 2026",
     location: "Remote · Mumbai",
     bullets: [
-      "Designing and shipping ML systems at TuroCrate, focused on production data pipelines and inference services.",
-      "Owning the full model lifecycle: training, evaluation, deployment, and observability across the platform.",
+      "Designed and shipped ML systems at TuroCrate, focused on production data pipelines and inference services.",
+      "Owned the full model lifecycle: training, evaluation, deployment, and observability across the platform.",
     ],
   },
   {
     company: "IIT Ropar · Annam.ai",
     role: "AI Research Intern",
     period: "Jun 2025 to Jul 2025",
-    location: "Ropar · Punjab",
+    location: "Onsite · Punjab",
     bullets: [
       "Built a CNN plant-disease classifier reaching 93% accuracy via ResNet-50 transfer learning on 87K+ images.",
       "Developed an ML recommendation engine and integrated NLP-based sentiment analysis for agricultural news.",
