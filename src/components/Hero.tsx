@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
 import { useEffect, useRef } from "react";
 import RevealText from "./RevealText";
@@ -157,14 +156,15 @@ export default function Hero() {
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
             className="absolute inset-0 rounded-[28px] overflow-hidden bg-background-soft border border-border shadow-[0_30px_80px_-20px_rgba(28,28,26,0.18)]"
           >
-            <Image
-              src="/avatar.jpg"
-              alt={profile.name}
-              fill
-              priority
-              sizes="(max-width: 768px) 90vw, 400px"
-              className="object-cover"
-            />
+            {/* Monogram */}
+            <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-background-soft via-paper to-background-soft">
+              <span className="font-serif text-[7rem] md:text-[8rem] leading-none tracking-tight text-foreground/80 select-none">
+                {profile.name
+                  .split(" ")
+                  .map((n) => n[0])
+                  .join("")}
+              </span>
+            </div>
             {/* Subtle vignette + scan-line */}
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/10 via-transparent to-transparent" />
             <motion.div
