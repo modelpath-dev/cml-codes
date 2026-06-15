@@ -16,7 +16,7 @@ export const profile = {
 export const experience = [
   {
     company: "NeuroFin.ai",
-    role: "AI/ML Intern",
+    role: "AI Engineer",
     period: "Sep 2025 to Present",
     location: "Onsite · Bengaluru",
     bullets: [

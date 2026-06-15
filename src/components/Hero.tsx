@@ -190,7 +190,7 @@ export default function Hero() {
             <div className="text-[10px] uppercase tracking-widest text-muted font-mono">
               Currently
             </div>
-            <div className="text-sm font-medium">AI/ML @ NeuroFin.ai</div>
+            <div className="text-sm font-medium">AI Engineer @ NeuroFin.ai</div>
           </motion.div>
 
           <motion.div
