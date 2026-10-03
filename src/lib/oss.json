@@ -1,0 +1,433 @@
+{
+  "syncedAt": "2026-10-03",
+  "repos": [
+    {
+      "name": "deepspeedai/DeepSpeed",
+      "url": "https://github.com/deepspeedai/DeepSpeed",
+      "avatar": "https://avatars.githubusercontent.com/u/74068820?v=4",
+      "description": "DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.",
+      "stars": 43172,
+      "forks": 5025,
+      "language": "Python",
+      "prs": [
+        {
+          "number": 8583,
+          "title": "fix(rollout): reject shared prefill with continuous batching",
+          "url": "https://github.com/deepspeedai/DeepSpeed/pull/8583",
+          "state": "merged",
+          "date": "2026-09-27",
+          "additions": 10,
+          "deletions": 7,
+          "files": 2
+        }
+      ]
+    },
+    {
+      "name": "HKUDS/Vibe-Trading",
+      "url": "https://github.com/HKUDS/Vibe-Trading",
+      "avatar": "https://avatars.githubusercontent.com/u/118165258?v=4",
+      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
+      "stars": 34485,
+      "forks": 5604,
+      "language": "Python",
+      "prs": [
+        {
+          "number": 1391,
+          "title": "feat(strategy-store): add description-driven adaptation substrate",
+          "url": "https://github.com/HKUDS/Vibe-Trading/pull/1391",
+          "state": "merged",
+          "date": "2026-09-10",
+          "additions": 381,
+          "deletions": 17,
+          "files": 7
+        }
+      ]
+    },
+    {
+      "name": "huggingface/speech-to-speech",
+      "url": "https://github.com/huggingface/speech-to-speech",
+      "avatar": "https://avatars.githubusercontent.com/u/25720743?v=4",
+      "description": "Build voice agents with open-source models",
+      "stars": 13363,
+      "forks": 1701,
+      "language": "Python",
+      "prs": [
+        {
+          "number": 564,
+          "title": "feat(responses): keep reasoning items across tool continuations",
+          "url": "https://github.com/huggingface/speech-to-speech/pull/564",
+          "state": "open",
+          "date": "2026-09-16",
+          "additions": 760,
+          "deletions": 52,
+          "files": 7
+        }
+      ]
+    },
+    {
+      "name": "espnet/espnet",
+      "url": "https://github.com/espnet/espnet",
+      "avatar": "https://avatars.githubusercontent.com/u/34493687?v=4",
+      "description": "End-to-End Speech Processing Toolkit",
+      "stars": 9976,
+      "forks": 2440,
+      "language": "Python",
+      "prs": [
+        {
+          "number": 6670,
+          "title": "fix(asr): rebuild Conv2dSubsamplingWOPosEnc mask from ilens",
+          "url": "https://github.com/espnet/espnet/pull/6670",
+          "state": "merged",
+          "date": "2026-09-19",
+          "additions": 143,
+          "deletions": 2,
+          "files": 4
+        },
+        {
+          "number": 6633,
+          "title": "Derive Conv*Subsampling masks from per-utterance lengths",
+          "url": "https://github.com/espnet/espnet/pull/6633",
+          "state": "merged",
+          "date": "2026-09-11",
+          "additions": 142,
+          "deletions": 8,
+          "files": 2
+        },
+        {
+          "number": 2,
+          "title": "SPLET: BLEU, chrF and TER in the corpus tier via sacrebleu",
+          "url": "https://github.com/sw005320/espnet-1/pull/2",
+          "state": "open",
+          "date": "2026-09-30",
+          "additions": 456,
+          "deletions": 36,
+          "files": 9,
+          "via": "sw005320/espnet-1"
+        },
+        {
+          "number": 6726,
+          "title": "fix(espnet3): unblock VCTK enhancement CI with EnhancementTask docstrings",
+          "url": "https://github.com/espnet/espnet/pull/6726",
+          "state": "open",
+          "date": "2026-09-19",
+          "additions": 3439,
+          "deletions": 17,
+          "files": 58
+        }
+      ]
+    },
+    {
+      "name": "Thysrael/Horizon",
+      "url": "https://github.com/Thysrael/Horizon",
+      "avatar": "https://avatars.githubusercontent.com/u/72613958?v=4",
+      "description": "📡 Your own AI-powered news radar. Generates daily briefings in English & Chinese. | 用 AI 构建你专属的新闻雷达",
+      "stars": 9547,
+      "forks": 1473,
+      "language": "Python",
+      "prs": [
+        {
+          "number": 157,
+          "title": "feat(twitter): add X keyword search discovery via Apify",
+          "url": "https://github.com/Thysrael/Horizon/pull/157",
+          "state": "merged",
+          "date": "2026-09-17",
+          "additions": 304,
+          "deletions": 35,
+          "files": 10
+        }
+      ]
+    },
+    {
+      "name": "QwenAudio/SenseVoice",
+      "url": "https://github.com/QwenAudio/SenseVoice",
+      "avatar": "https://avatars.githubusercontent.com/u/167062371?v=4",
+      "description": "Open-source SenseVoiceSmall model for Mandarin, Cantonese, English, Japanese, and Korean ASR, language ID, emotion recognition, and audio event detection.",
+      "stars": 9429,
+      "forks": 835,
+      "language": "C",
+      "prs": [
+        {
+          "number": 351,
+          "title": "fix(container): start on CPU when device=auto and align run commands",
+          "url": "https://github.com/QwenAudio/SenseVoice/pull/351",
+          "state": "merged",
+          "date": "2026-09-05",
+          "additions": 111,
+          "deletions": 8,
+          "files": 9
+        }
+      ]
+    },
+    {
+      "name": "nexu-io/html-anything",
+      "url": "https://github.com/nexu-io/html-anything",
+      "avatar": "https://avatars.githubusercontent.com/u/263625318?v=4",
+      "description": "✨ The agentic HTML editor — your local AI agent writes the HTML, you ship it. 🚀 75 Skills × 9 Surfaces (magazine · deck · poster · XHS / tweet · prototype · data report · Hyperframes) 🛡️ Sandboxed preview · 📤 1-click to WeChat / X / Zhihu / HTML / PNG 🔑 Zero API key — Claude Code / Cursor / Codex / Gemini / Copilot / OpenCode / Qwen / Aider.",
+      "stars": 8993,
+      "forks": 868,
+      "language": "HTML",
+      "prs": [
+        {
+          "number": 150,
+          "title": "add Grok Build as a detected local agent CLI",
+          "url": "https://github.com/nexu-io/html-anything/pull/150",
+          "state": "open",
+          "date": "2026-09-12",
+          "additions": 643,
+          "deletions": 22,
+          "files": 17
+        }
+      ]
+    },
+    {
+      "name": "potpie-ai/potpie",
+      "url": "https://github.com/potpie-ai/potpie",
+      "avatar": "https://avatars.githubusercontent.com/u/148619568?v=4",
+      "description": "Context Graph for AI Native SDLC",
+      "stars": 5736,
+      "forks": 685,
+      "language": "Python",
+      "prs": [
+        {
+          "number": 1077,
+          "title": "Fence untrusted context-graph claims at nudge and graph-read egress",
+          "url": "https://github.com/potpie-ai/potpie/pull/1077",
+          "state": "open",
+          "date": "2026-09-16",
+          "additions": 919,
+          "deletions": 22,
+          "files": 39
+        }
+      ]
+    },
+    {
+      "name": "huggingface/text-embeddings-inference",
+      "url": "https://github.com/huggingface/text-embeddings-inference",
+      "avatar": "https://avatars.githubusercontent.com/u/25720743?v=4",
+      "description": "A blazing fast inference solution for text embeddings models",
+      "stars": 5069,
+      "forks": 435,
+      "language": "Rust",
+      "prs": [
+        {
+          "number": 935,
+          "title": "Add OTel trace_id and span_id to JSON logs",
+          "url": "https://github.com/huggingface/text-embeddings-inference/pull/935",
+          "state": "open",
+          "date": "2026-09-26",
+          "additions": 164,
+          "deletions": 3,
+          "files": 4
+        }
+      ]
+    },
+    {
+      "name": "walkinglabs/hands-on-modern-rl",
+      "url": "https://github.com/walkinglabs/hands-on-modern-rl",
+      "avatar": "https://avatars.githubusercontent.com/u/271878417?v=4",
+      "description": "🚀 An open-source, hands-on curriculum bridging the gap from basic RL concepts to LLM alignment, RLVR, and advanced Agentic systems. ",
+      "stars": 4499,
+      "forks": 331,
+      "language": "Python",
+      "prs": [
+        {
+          "number": 87,
+          "title": "Align PyTorch PPO ep_rew_mean with SB3's 100-episode window",
+          "url": "https://github.com/walkinglabs/hands-on-modern-rl/pull/87",
+          "state": "open",
+          "date": "2026-09-21",
+          "additions": 23,
+          "deletions": 9,
+          "files": 3
+        }
+      ]
+    },
+    {
+      "name": "microsoft/apm",
+      "url": "https://github.com/microsoft/apm",
+      "avatar": "https://avatars.githubusercontent.com/u/6154722?v=4",
+      "description": "Agent Package Manager",
+      "stars": 3930,
+      "forks": 385,
+      "language": "Python",
+      "prs": [
+        {
+          "number": 3044,
+          "title": "fix(marketplace): resolve version tags from package remote",
+          "url": "https://github.com/microsoft/apm/pull/3044",
+          "state": "merged",
+          "date": "2026-09-30",
+          "additions": 1065,
+          "deletions": 52,
+          "files": 17
+        }
+      ]
+    },
+    {
+      "name": "LazyAGI/LazyLLM",
+      "url": "https://github.com/LazyAGI/LazyLLM",
+      "avatar": "https://avatars.githubusercontent.com/u/171651681?v=4",
+      "description": "Easiest and laziest way for  building multi-agent LLMs applications.",
+      "stars": 3889,
+      "forks": 423,
+      "language": "Python",
+      "prs": [
+        {
+          "number": 1324,
+          "title": "feat(flow): trace Switch and Loop condition callbacks",
+          "url": "https://github.com/LazyAGI/LazyLLM/pull/1324",
+          "state": "open",
+          "date": "2026-09-16",
+          "additions": 143,
+          "deletions": 7,
+          "files": 7
+        }
+      ]
+    },
+    {
+      "name": "SciSharp/LLamaSharp",
+      "url": "https://github.com/SciSharp/LLamaSharp",
+      "avatar": "https://avatars.githubusercontent.com/u/44989469?v=4",
+      "description": "A C#/.NET library to run LLM (🦙LLaMA/LLaVA) on your local device efficiently.",
+      "stars": 3809,
+      "forks": 513,
+      "language": "C#",
+      "prs": [
+        {
+          "number": 1440,
+          "title": "feat(cuda): probe cuda13 native libraries before cuda12",
+          "url": "https://github.com/SciSharp/LLamaSharp/pull/1440",
+          "state": "merged",
+          "date": "2026-10-01",
+          "additions": 100,
+          "deletions": 5,
+          "files": 3
+        },
+        {
+          "number": 1439,
+          "title": "feat(cuda): add CUDA 13.0.0 jobs to the compile workflow",
+          "url": "https://github.com/SciSharp/LLamaSharp/pull/1439",
+          "state": "merged",
+          "date": "2026-09-27",
+          "additions": 22,
+          "deletions": 5,
+          "files": 1
+        },
+        {
+          "number": 1438,
+          "title": "Disable SSE4.2 in noavx native builds",
+          "url": "https://github.com/SciSharp/LLamaSharp/pull/1438",
+          "state": "merged",
+          "date": "2026-09-12",
+          "additions": 27,
+          "deletions": 7,
+          "files": 3
+        },
+        {
+          "number": 1441,
+          "title": "feat(cuda): add LLamaSharp.Backend.Cuda13 packages",
+          "url": "https://github.com/SciSharp/LLamaSharp/pull/1441",
+          "state": "open",
+          "date": "2026-09-18",
+          "additions": 243,
+          "deletions": 5,
+          "files": 9
+        }
+      ]
+    },
+    {
+      "name": "strukto-ai/mirage",
+      "url": "https://github.com/strukto-ai/mirage",
+      "avatar": "https://avatars.githubusercontent.com/u/248286111?v=4",
+      "description": "The World's First Virtual Terminal for AI Agents",
+      "stars": 3677,
+      "forks": 272,
+      "language": "TypeScript",
+      "prs": [
+        {
+          "number": 1191,
+          "title": "feat: use Box /events behind watch pull, add BoxEventHook",
+          "url": "https://github.com/strukto-ai/mirage/pull/1191",
+          "state": "merged",
+          "date": "2026-09-25",
+          "additions": 3228,
+          "deletions": 293,
+          "files": 33
+        },
+        {
+          "number": 1059,
+          "title": "fix: use Dropbox list_folder/continue behind watch pull",
+          "url": "https://github.com/strukto-ai/mirage/pull/1059",
+          "state": "merged",
+          "date": "2026-09-13",
+          "additions": 1239,
+          "deletions": 105,
+          "files": 14
+        }
+      ]
+    },
+    {
+      "name": "nextlevelbuilder/goclaw",
+      "url": "https://github.com/nextlevelbuilder/goclaw",
+      "avatar": "https://avatars.githubusercontent.com/u/246974152?v=4",
+      "description": "GoClaw - GoClaw is OpenClaw rebuilt in Go — with multi-tenant isolation, 5-layer security, and native concurrency. Deploy AI agent teams at scale without compromising on safety.",
+      "stars": 3640,
+      "forks": 1063,
+      "language": "Go",
+      "prs": [
+        {
+          "number": 1582,
+          "title": "fix(vault): search document bodies and match any query word (#1554)",
+          "url": "https://github.com/nextlevelbuilder/goclaw/pull/1582",
+          "state": "merged",
+          "date": "2026-09-27",
+          "additions": 797,
+          "deletions": 65,
+          "files": 14
+        }
+      ]
+    },
+    {
+      "name": "superlinked/sie",
+      "url": "https://github.com/superlinked/sie",
+      "avatar": "https://avatars.githubusercontent.com/u/94243920?v=4",
+      "description": "Open-source inference server and production cluster for all the models your agent needs.",
+      "stars": 3358,
+      "forks": 318,
+      "language": "Python",
+      "prs": [
+        {
+          "number": 268,
+          "title": "fix(helm): make KEDA hook Job resources configurable",
+          "url": "https://github.com/superlinked/sie/pull/268",
+          "state": "merged",
+          "date": "2026-09-17",
+          "additions": 32,
+          "deletions": 18,
+          "files": 6
+        }
+      ]
+    },
+    {
+      "name": "roy-tong/AgentMeasure",
+      "url": "https://github.com/roy-tong/AgentMeasure",
+      "avatar": "https://avatars.githubusercontent.com/u/196586291?v=4",
+      "description": "Open measurement infrastructure for AI agents. Our audit of 110+ usage tools found 45+ verified billing bugs, with 23 fixes merged or accepted upstream (openlit, langfuse, codeburn, toktrack and more) and external real-world cases landing as conformance evidence. PASS / FAIL / UNPROVABLE in CI.",
+      "stars": 218,
+      "forks": 5,
+      "language": "Python",
+      "prs": [
+        {
+          "number": 22,
+          "title": "evidence: live / replay / synthetic latency basis fixture",
+          "url": "https://github.com/roy-tong/AgentMeasure/pull/22",
+          "state": "merged",
+          "date": "2026-09-21",
+          "additions": 155,
+          "deletions": 0,
+          "files": 2
+        }
+      ]
+    }
+  ]
+}
