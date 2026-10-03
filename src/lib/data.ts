@@ -38,14 +38,14 @@ export const experience = [
     ],
   },
   {
-    company: "IIT Bombay · TuroCrate.ai",
+    company: "IIT Bombay · Turocrates.ai",
     mark: "TC",
     url: "https://turocrates.ai",
     role: "ML Engineer",
     period: "Dec 2025 to Apr 2026",
     location: "Remote · Mumbai",
     bullets: [
-      "Designed and shipped ML systems at TuroCrate, focused on production data pipelines and inference services.",
+      "Designed and shipped ML systems at Turocrates, focused on production data pipelines and inference services.",
       "Owned the full model lifecycle: training, evaluation, deployment, and observability across the platform.",
     ],
   },
