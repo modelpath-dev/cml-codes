@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // Regenerates src/lib/oss.json from GitHub: every merged PR by AUTHOR
-// in a public repo the author doesn't own, grouped by repo, ranked by stars.
+// in a public repo the author doesn't own, grouped by repo, ranked by the
+// reputation of the organization behind it (TIERS), then by stars.
 // Usage: GITHUB_TOKEN=... node scripts/sync-oss.mjs  (falls back to `gh auth token`)
 import { execSync } from "node:child_process";
 import { writeFileSync } from "node:fs";
@@ -8,6 +9,19 @@ import { writeFileSync } from "node:fs";
 const AUTHOR = "modelpath-dev";
 // PRs made against a maintainer's fork are shown under the upstream repo.
 const GROUP_INTO = { "sw005320/espnet-1": "espnet/espnet" };
+// Highest reputation first. `org` is shown on the card; repos in no tier sort last.
+const TIERS = [
+  { org: "Microsoft", repos: ["deepspeedai/DeepSpeed", "microsoft/apm"] },
+  { org: "Carnegie Mellon University", repos: ["espnet/espnet"] },
+  { org: "Alibaba Qwen", repos: ["QwenAudio/SenseVoice"] },
+  { org: "University of Hong Kong", repos: ["HKUDS/Vibe-Trading"] },
+  { repos: ["superlinked/sie", "strukto-ai/mirage"] },
+  { repos: ["SciSharp/LLamaSharp", "nextlevelbuilder/goclaw"] },
+];
+const tierOf = (name) => {
+  const i = TIERS.findIndex((t) => t.repos.includes(name));
+  return i === -1 ? TIERS.length : i;
+};
 const OUT = new URL("../src/lib/oss.json", import.meta.url);
 
 const token =
@@ -64,6 +78,7 @@ for (const [name, prs] of groups) {
   prs.sort((a, b) => b.date.localeCompare(a.date));
   repos.push({
     name: m.full_name,
+    ...(TIERS[tierOf(m.full_name)]?.org && { org: TIERS[tierOf(m.full_name)].org }),
     url: m.html_url,
     avatar: m.owner.avatar_url,
     description: m.description ?? "",
@@ -73,7 +88,7 @@ for (const [name, prs] of groups) {
     prs,
   });
 }
-repos.sort((a, b) => b.stars - a.stars);
+repos.sort((a, b) => tierOf(a.name) - tierOf(b.name) || b.stars - a.stars);
 
 writeFileSync(OUT, JSON.stringify({ syncedAt: new Date().toISOString().slice(0, 10), repos }, null, 2) + "\n");
 console.log(`${repos.length} repos, ${repos.flatMap((r) => r.prs).length} merged PRs -> ${OUT.pathname}`);

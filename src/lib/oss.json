@@ -3,6 +3,7 @@
   "repos": [
     {
       "name": "deepspeedai/DeepSpeed",
+      "org": "Microsoft",
       "url": "https://github.com/deepspeedai/DeepSpeed",
       "avatar": "https://avatars.githubusercontent.com/u/74068820?v=4",
       "description": "DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.",
@@ -22,27 +23,29 @@
       ]
     },
     {
-      "name": "HKUDS/Vibe-Trading",
-      "url": "https://github.com/HKUDS/Vibe-Trading",
-      "avatar": "https://avatars.githubusercontent.com/u/118165258?v=4",
-      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-      "stars": 34485,
-      "forks": 5605,
+      "name": "microsoft/apm",
+      "org": "Microsoft",
+      "url": "https://github.com/microsoft/apm",
+      "avatar": "https://avatars.githubusercontent.com/u/6154722?v=4",
+      "description": "Agent Package Manager",
+      "stars": 3931,
+      "forks": 385,
       "language": "Python",
       "prs": [
         {
-          "number": 1391,
-          "title": "feat(strategy-store): add description-driven adaptation substrate",
-          "url": "https://github.com/HKUDS/Vibe-Trading/pull/1391",
-          "date": "2026-09-10",
-          "additions": 381,
-          "deletions": 17,
-          "files": 7
+          "number": 3044,
+          "title": "fix(marketplace): resolve version tags from package remote",
+          "url": "https://github.com/microsoft/apm/pull/3044",
+          "date": "2026-09-30",
+          "additions": 1065,
+          "deletions": 52,
+          "files": 17
         }
       ]
     },
     {
       "name": "espnet/espnet",
+      "org": "Carnegie Mellon University",
       "url": "https://github.com/espnet/espnet",
       "avatar": "https://avatars.githubusercontent.com/u/34493687?v=4",
       "description": "End-to-End Speech Processing Toolkit",
@@ -71,27 +74,8 @@
       ]
     },
     {
-      "name": "Thysrael/Horizon",
-      "url": "https://github.com/Thysrael/Horizon",
-      "avatar": "https://avatars.githubusercontent.com/u/72613958?v=4",
-      "description": "📡 Your own AI-powered news radar. Generates daily briefings in English & Chinese. | 用 AI 构建你专属的新闻雷达",
-      "stars": 9547,
-      "forks": 1473,
-      "language": "Python",
-      "prs": [
-        {
-          "number": 157,
-          "title": "feat(twitter): add X keyword search discovery via Apify",
-          "url": "https://github.com/Thysrael/Horizon/pull/157",
-          "date": "2026-09-17",
-          "additions": 304,
-          "deletions": 35,
-          "files": 10
-        }
-      ]
-    },
-    {
       "name": "QwenAudio/SenseVoice",
+      "org": "Alibaba Qwen",
       "url": "https://github.com/QwenAudio/SenseVoice",
       "avatar": "https://avatars.githubusercontent.com/u/167062371?v=4",
       "description": "Open-source SenseVoiceSmall model for Mandarin, Cantonese, English, Japanese, and Korean ASR, language ID, emotion recognition, and audio event detection.",
@@ -111,22 +95,72 @@
       ]
     },
     {
-      "name": "microsoft/apm",
-      "url": "https://github.com/microsoft/apm",
-      "avatar": "https://avatars.githubusercontent.com/u/6154722?v=4",
-      "description": "Agent Package Manager",
-      "stars": 3931,
-      "forks": 385,
+      "name": "HKUDS/Vibe-Trading",
+      "org": "University of Hong Kong",
+      "url": "https://github.com/HKUDS/Vibe-Trading",
+      "avatar": "https://avatars.githubusercontent.com/u/118165258?v=4",
+      "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
+      "stars": 34487,
+      "forks": 5606,
       "language": "Python",
       "prs": [
         {
-          "number": 3044,
-          "title": "fix(marketplace): resolve version tags from package remote",
-          "url": "https://github.com/microsoft/apm/pull/3044",
-          "date": "2026-09-30",
-          "additions": 1065,
-          "deletions": 52,
-          "files": 17
+          "number": 1391,
+          "title": "feat(strategy-store): add description-driven adaptation substrate",
+          "url": "https://github.com/HKUDS/Vibe-Trading/pull/1391",
+          "date": "2026-09-10",
+          "additions": 381,
+          "deletions": 17,
+          "files": 7
+        }
+      ]
+    },
+    {
+      "name": "strukto-ai/mirage",
+      "url": "https://github.com/strukto-ai/mirage",
+      "avatar": "https://avatars.githubusercontent.com/u/248286111?v=4",
+      "description": "The World's First Virtual Terminal for AI Agents",
+      "stars": 3677,
+      "forks": 272,
+      "language": "TypeScript",
+      "prs": [
+        {
+          "number": 1191,
+          "title": "feat: use Box /events behind watch pull, add BoxEventHook",
+          "url": "https://github.com/strukto-ai/mirage/pull/1191",
+          "date": "2026-09-25",
+          "additions": 3228,
+          "deletions": 293,
+          "files": 33
+        },
+        {
+          "number": 1059,
+          "title": "fix: use Dropbox list_folder/continue behind watch pull",
+          "url": "https://github.com/strukto-ai/mirage/pull/1059",
+          "date": "2026-09-13",
+          "additions": 1239,
+          "deletions": 105,
+          "files": 14
+        }
+      ]
+    },
+    {
+      "name": "superlinked/sie",
+      "url": "https://github.com/superlinked/sie",
+      "avatar": "https://avatars.githubusercontent.com/u/94243920?v=4",
+      "description": "Open-source inference server and production cluster for all the models your agent needs.",
+      "stars": 3358,
+      "forks": 318,
+      "language": "Python",
+      "prs": [
+        {
+          "number": 268,
+          "title": "fix(helm): make KEDA hook Job resources configurable",
+          "url": "https://github.com/superlinked/sie/pull/268",
+          "date": "2026-09-17",
+          "additions": 32,
+          "deletions": 18,
+          "files": 6
         }
       ]
     },
@@ -169,35 +203,6 @@
       ]
     },
     {
-      "name": "strukto-ai/mirage",
-      "url": "https://github.com/strukto-ai/mirage",
-      "avatar": "https://avatars.githubusercontent.com/u/248286111?v=4",
-      "description": "The World's First Virtual Terminal for AI Agents",
-      "stars": 3677,
-      "forks": 272,
-      "language": "TypeScript",
-      "prs": [
-        {
-          "number": 1191,
-          "title": "feat: use Box /events behind watch pull, add BoxEventHook",
-          "url": "https://github.com/strukto-ai/mirage/pull/1191",
-          "date": "2026-09-25",
-          "additions": 3228,
-          "deletions": 293,
-          "files": 33
-        },
-        {
-          "number": 1059,
-          "title": "fix: use Dropbox list_folder/continue behind watch pull",
-          "url": "https://github.com/strukto-ai/mirage/pull/1059",
-          "date": "2026-09-13",
-          "additions": 1239,
-          "deletions": 105,
-          "files": 14
-        }
-      ]
-    },
-    {
       "name": "nextlevelbuilder/goclaw",
       "url": "https://github.com/nextlevelbuilder/goclaw",
       "avatar": "https://avatars.githubusercontent.com/u/246974152?v=4",
@@ -218,22 +223,22 @@
       ]
     },
     {
-      "name": "superlinked/sie",
-      "url": "https://github.com/superlinked/sie",
-      "avatar": "https://avatars.githubusercontent.com/u/94243920?v=4",
-      "description": "Open-source inference server and production cluster for all the models your agent needs.",
-      "stars": 3358,
-      "forks": 318,
+      "name": "Thysrael/Horizon",
+      "url": "https://github.com/Thysrael/Horizon",
+      "avatar": "https://avatars.githubusercontent.com/u/72613958?v=4",
+      "description": "📡 Your own AI-powered news radar. Generates daily briefings in English & Chinese. | 用 AI 构建你专属的新闻雷达",
+      "stars": 9547,
+      "forks": 1473,
       "language": "Python",
       "prs": [
         {
-          "number": 268,
-          "title": "fix(helm): make KEDA hook Job resources configurable",
-          "url": "https://github.com/superlinked/sie/pull/268",
+          "number": 157,
+          "title": "feat(twitter): add X keyword search discovery via Apify",
+          "url": "https://github.com/Thysrael/Horizon/pull/157",
           "date": "2026-09-17",
-          "additions": 32,
-          "deletions": 18,
-          "files": 6
+          "additions": 304,
+          "deletions": 35,
+          "files": 10
         }
       ]
     },

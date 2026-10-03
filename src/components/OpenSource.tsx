@@ -5,7 +5,7 @@ import { GitFork, GitMerge, Star } from "lucide-react";
 import Section, { ShowMore } from "./Section";
 import oss from "@/lib/oss.json";
 
-type Repo = (typeof oss.repos)[number];
+type Repo = (typeof oss.repos)[number] & { org?: string };
 type PR = Repo["prs"][number] & { via?: string };
 
 const VISIBLE = 6;
@@ -73,6 +73,11 @@ function RepoCard({ repo, rank }: { repo: Repo; rank: number }) {
             <span className="text-muted">{repo.name.split("/")[0]}/</span>
             {repo.name.split("/")[1]}
           </span>
+          {repo.org && (
+            <span className="hidden shrink-0 rounded-full border border-border px-2 py-0.5 text-[11px] text-muted sm:inline">
+              {repo.org}
+            </span>
+          )}
         </a>
         <div className="flex shrink-0 items-center gap-3 text-sm text-muted">
           <span className="inline-flex items-center gap-1" title={`${repo.stars.toLocaleString()} stars`}>
@@ -87,6 +92,7 @@ function RepoCard({ repo, rank }: { repo: Repo; rank: number }) {
         </div>
       </div>
 
+      {repo.org && <p className="mt-1 text-[11px] text-muted sm:hidden">{repo.org}</p>}
       {repo.description && (
         <p className="mt-1.5 line-clamp-2 font-mono text-xs text-muted">{repo.description}</p>
       )}
@@ -132,7 +138,7 @@ export default function OpenSource() {
     <Section
       id="open-source"
       title="Open Source Contributions"
-      subtitle={`${mergedCount} merged PRs across ${oss.repos.length} projects, ranked by repository stars`}
+      subtitle={`${mergedCount} merged PRs across ${oss.repos.length} projects, ranked by the organization behind each project`}
       aside={
         <span
           className="hidden shrink-0 items-center gap-1.5 rounded-full bg-chip px-3 py-1 font-mono text-sm sm:inline-flex"
@@ -144,7 +150,7 @@ export default function OpenSource() {
       }
     >
       <div className="space-y-3">
-        {repos.map((repo, i) => (
+        {(repos as Repo[]).map((repo, i) => (
           <RepoCard key={repo.name} repo={repo} rank={i + 1} />
         ))}
       </div>
