@@ -1,15 +1,7 @@
-"use client";
-
-import { useState } from "react";
-import Section, { ShowMore } from "./Section";
-import { experience } from "@/lib/data";
-
-const VISIBLE = 3;
+import Section from "./Section";
+import { experience as items } from "@/lib/data";
 
 export default function Experience() {
-  const [open, setOpen] = useState(false);
-  const items = open ? experience : experience.slice(0, VISIBLE);
-
   return (
     <Section id="experience" title="Work Experience">
       <ol className="relative">
@@ -40,9 +32,11 @@ export default function Experience() {
                   </div>
                   <div className="flex items-center gap-2 sm:flex-col sm:items-end">
                     <span className="text-sm text-muted">{job.period}</span>
-                    <span className="rounded border border-border px-1.5 py-0.5 font-mono text-[11px] font-semibold">
-                      {job.location}
-                    </span>
+                    {job.location && (
+                      <span className="rounded border border-border px-1.5 py-0.5 font-mono text-[11px] font-semibold">
+                        {job.location}
+                      </span>
+                    )}
                   </div>
                 </div>
                 <ul className="mt-3 space-y-1.5 text-sm text-muted">
@@ -55,9 +49,6 @@ export default function Experience() {
           );
         })}
       </ol>
-      {experience.length > VISIBLE && (
-        <ShowMore open={open} onToggle={() => setOpen(!open)} label="experiences" />
-      )}
     </Section>
   );
 }

@@ -15,13 +15,23 @@ export const profile = {
 
 export const experience = [
   {
+    company: "OSVI.ai",
+    mark: "OS",
+    role: "Founding AI Engineer",
+    period: "Aug 2026 to Present",
+    bullets: [
+      "Building the core of OSVI's real-time voice AI platform: the agent engine that runs every call, from speech recognition and LLM reasoning to speech synthesis and telephony.",
+      "Built its voice-to-voice calling and speech stack, cutting response latency and keeping calls running through model outages.",
+    ],
+  },
+  {
     company: "NeuroFin.ai",
     mark: "NF",
     role: "AI Engineer",
-    period: "Sep 2025 to Present",
+    period: "Sep 2025 to Jul 2026",
     location: "Onsite · Bengaluru",
     bullets: [
-      "Building an intelligent KYC verification system using computer vision and deep learning to automate document validation and identity matching.",
+      "Built an intelligent KYC verification system using computer vision and deep learning to automate document validation and identity matching.",
       "Designed a robust pipeline that classifies document types, extracts key fields, and performs face matching for secure user onboarding.",
     ],
   },
