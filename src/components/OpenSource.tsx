@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { GitFork, GitMerge, GitPullRequest, Star } from "lucide-react";
+import { GitFork, GitMerge, Star } from "lucide-react";
 import Section, { ShowMore } from "./Section";
 import oss from "@/lib/oss.json";
 
@@ -21,19 +21,13 @@ const shortDate = (iso: string) =>
     timeZone: "UTC",
   });
 
-const mergedRepos = oss.repos.filter((r) => r.prs.some((p) => p.state === "merged"));
-const mergedCount = oss.repos.flatMap((r) => r.prs).filter((p) => p.state === "merged").length;
-const mergedStars = mergedRepos.reduce((sum, r) => sum + r.stars, 0);
+const mergedCount = oss.repos.flatMap((r) => r.prs).length;
+const totalStars = oss.repos.reduce((sum, r) => sum + r.stars, 0);
 
 function PRLine({ pr }: { pr: PR }) {
-  const merged = pr.state === "merged";
-  const Icon = merged ? GitMerge : GitPullRequest;
   return (
     <div className="flex min-w-0 items-start gap-2">
-      <Icon
-        className={`mt-0.5 h-4 w-4 shrink-0 ${merged ? "text-merged" : "text-open"}`}
-        aria-label={merged ? "Merged" : "Open"}
-      />
+      <GitMerge className="mt-0.5 h-4 w-4 shrink-0 text-merged" aria-label="Merged" />
       <div className="min-w-0 flex-1">
         <a
           href={pr.url}
@@ -47,9 +41,7 @@ function PRLine({ pr }: { pr: PR }) {
           <span>#{pr.number}</span>
           <span className="text-add">+{pr.additions}</span>
           <span className="-ml-1 text-del">−{pr.deletions}</span>
-          <span>
-            {merged ? "merged" : "opened"} {shortDate(pr.date)}
-          </span>
+          <span>merged {shortDate(pr.date)}</span>
           {pr.via && <span>via {pr.via}</span>}
         </div>
       </div>
@@ -59,8 +51,6 @@ function PRLine({ pr }: { pr: PR }) {
 
 function RepoCard({ repo, rank }: { repo: Repo; rank: number }) {
   const prs = repo.prs as PR[];
-  const merged = prs.filter((p) => p.state === "merged").length;
-  const open = prs.length - merged;
 
   return (
     <article className="min-w-0 rounded-xl border border-border p-4 transition-colors hover:bg-background-soft/60">
@@ -107,7 +97,7 @@ function RepoCard({ repo, rank }: { repo: Repo; rank: number }) {
         ) : (
           <>
             <p className="mb-2 font-mono text-[11px] text-muted">
-              {prs.length} pull requests · {merged} merged{open > 0 && ` · ${open} open`}
+              {prs.length} merged pull requests
             </p>
             <ul>
               {prs.map((pr) => (
@@ -146,10 +136,10 @@ export default function OpenSource() {
       aside={
         <span
           className="hidden shrink-0 items-center gap-1.5 rounded-full bg-chip px-3 py-1 font-mono text-sm sm:inline-flex"
-          title="Combined stars of repositories with a merged contribution"
+          title="Combined stars of the repositories above"
         >
           <Star className="h-4 w-4 fill-amber-400 text-amber-400" aria-hidden />
-          {compact(mergedStars)} combined stars
+          {compact(totalStars)} combined stars
         </span>
       }
     >

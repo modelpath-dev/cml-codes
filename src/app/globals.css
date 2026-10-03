@@ -11,7 +11,6 @@
   --chip: #f1f1ef;
   --paper: #ffffff;
   --merged: #8250df;
-  --open: #1a7f37;
   --add: #1a7f37;
   --del: #cf222e;
 }
@@ -28,7 +27,6 @@
     --chip: #1c1c1f;
     --paper: #ffffff;
     --merged: #a371f7;
-    --open: #3fb950;
     --add: #3fb950;
     --del: #f85149;
   }
@@ -45,7 +43,6 @@
   --chip: #1c1c1f;
   --paper: #ffffff;
   --merged: #a371f7;
-  --open: #3fb950;
   --add: #3fb950;
   --del: #f85149;
 }
@@ -61,7 +58,6 @@
   --color-chip: var(--chip);
   --color-paper: var(--paper);
   --color-merged: var(--merged);
-  --color-open: var(--open);
   --color-add: var(--add);
   --color-del: var(--del);
   --font-sans: var(--font-geist-sans);

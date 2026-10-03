@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Regenerates src/lib/oss.json from GitHub: every merged or open PR by AUTHOR
+// Regenerates src/lib/oss.json from GitHub: every merged PR by AUTHOR
 // in a public repo the author doesn't own, grouped by repo, ranked by stars.
 // Usage: GITHUB_TOKEN=... node scripts/sync-oss.mjs  (falls back to `gh auth token`)
 import { execSync } from "node:child_process";
@@ -42,9 +42,7 @@ for (const it of items) {
   if (meta.private) continue;
 
   const pr = await gh(`/repos/${source}/pulls/${it.number}`);
-  if (pr.draft) continue;
-  const state = pr.merged_at ? "merged" : pr.state === "open" ? "open" : null;
-  if (!state) continue; // closed without merge
+  if (!pr.merged_at) continue;
 
   const target = GROUP_INTO[source] ?? source;
   if (!groups.has(target)) groups.set(target, []);
@@ -52,8 +50,7 @@ for (const it of items) {
     number: pr.number,
     title: pr.title,
     url: pr.html_url,
-    state,
-    date: (pr.merged_at ?? pr.created_at).slice(0, 10),
+    date: pr.merged_at.slice(0, 10),
     additions: pr.additions,
     deletions: pr.deletions,
     files: pr.changed_files,
@@ -64,7 +61,7 @@ for (const it of items) {
 const repos = [];
 for (const [name, prs] of groups) {
   const m = await repo(name);
-  prs.sort((a, b) => (a.state === b.state ? b.date.localeCompare(a.date) : a.state === "merged" ? -1 : 1));
+  prs.sort((a, b) => b.date.localeCompare(a.date));
   repos.push({
     name: m.full_name,
     url: m.html_url,
@@ -79,5 +76,4 @@ for (const [name, prs] of groups) {
 repos.sort((a, b) => b.stars - a.stars);
 
 writeFileSync(OUT, JSON.stringify({ syncedAt: new Date().toISOString().slice(0, 10), repos }, null, 2) + "\n");
-const merged = repos.flatMap((r) => r.prs).filter((p) => p.state === "merged").length;
-console.log(`${repos.length} repos, ${merged} merged PRs -> ${OUT.pathname}`);
+console.log(`${repos.length} repos, ${repos.flatMap((r) => r.prs).length} merged PRs -> ${OUT.pathname}`);
