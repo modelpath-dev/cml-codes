@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 import Section from "./Section";
 import { experience as items } from "@/lib/data";
 
@@ -27,7 +28,21 @@ export default function Experience() {
               >
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
                   <div>
-                    <h3 className="font-medium">{job.company}</h3>
+                    <h3 className="font-medium">
+                      {job.url ? (
+                        <a
+                          href={job.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-1 underline-offset-2 hover:underline"
+                        >
+                          {job.company}
+                          <ArrowUpRight className="h-3.5 w-3.5 text-muted" aria-hidden />
+                        </a>
+                      ) : (
+                        job.company
+                      )}
+                    </h3>
                     <p className="font-mono text-sm">{job.role}</p>
                   </div>
                   <div className="flex items-center gap-2 sm:flex-col sm:items-end">

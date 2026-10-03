@@ -17,6 +17,7 @@ export const experience = [
   {
     company: "OSVI.ai",
     mark: "OS",
+    url: "https://osvi.ai",
     role: "Founding AI Engineer",
     period: "Aug 2026 to Present",
     bullets: [
@@ -27,6 +28,7 @@ export const experience = [
   {
     company: "NeuroFin.ai",
     mark: "NF",
+    url: "https://neurofin.ai",
     role: "AI Engineer",
     period: "Sep 2025 to Jul 2026",
     location: "Onsite · Bengaluru",
@@ -38,6 +40,7 @@ export const experience = [
   {
     company: "IIT Bombay · TuroCrate.ai",
     mark: "TC",
+    url: "https://turocrates.ai",
     role: "ML Engineer",
     period: "Dec 2025 to Apr 2026",
     location: "Remote · Mumbai",
@@ -49,6 +52,7 @@ export const experience = [
   {
     company: "IIT Ropar · Annam.ai",
     mark: "AN",
+    url: "https://www.annam.ai",
     role: "AI Research Intern",
     period: "Jun 2025 to Jul 2025",
     location: "Onsite · Punjab",
@@ -60,6 +64,7 @@ export const experience = [
   {
     company: "ISRO · LPSC",
     mark: "IS",
+    url: "https://www.lpsc.gov.in",
     role: "Machine Learning Intern",
     period: "Jun 2024 to Jul 2024",
     location: "Onsite · Kerala",
