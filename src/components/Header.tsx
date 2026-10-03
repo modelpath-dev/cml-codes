@@ -1,7 +1,9 @@
 import Image from "next/image";
-import { Mail, MapPin } from "lucide-react";
+import Link from "next/link";
+import { Download, FileText, Mail, MapPin } from "lucide-react";
 import { GithubIcon, LinkedinIcon, XIcon } from "./BrandIcons";
 import { profile } from "@/lib/data";
+import { resumePdf } from "@/lib/resume";
 
 const links = [
   { label: "Email", href: profile.socials.email, Icon: Mail },
@@ -36,6 +38,22 @@ export default function Header() {
               <Icon className="h-4 w-4" />
             </a>
           ))}
+          <Link
+            href="/resume"
+            className="inline-flex h-9 items-center gap-1.5 rounded-md border border-border px-3 font-mono text-xs text-foreground/80 transition-colors hover:bg-background-soft hover:text-foreground"
+          >
+            <FileText className="h-4 w-4" aria-hidden />
+            Resume
+          </Link>
+          <a
+            href={resumePdf}
+            download
+            aria-label="Download resume (PDF)"
+            title="Download resume (PDF)"
+            className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-border text-foreground/80 transition-colors hover:bg-background-soft hover:text-foreground"
+          >
+            <Download className="h-4 w-4" />
+          </a>
         </div>
       </div>
       <Image

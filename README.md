@@ -32,6 +32,15 @@ node scripts/sync-oss.mjs   # uses $GITHUB_TOKEN, or `gh auth token` if unset
 
 It collects every merged PR by `modelpath-dev` in public repos the account doesn't own, groups them by repo (several PRs in one repo render as a tree), and ranks repos by the organization behind them (the `TIERS` list in the script), then by stars. Private repos and unmerged PRs are skipped. Re-run it and commit the JSON to refresh the section.
 
+## Resume
+
+`/resume` shows the resume as a web page, with a Download PDF button. The header and the bottom dock link to it.
+
+- Web view content: `src/lib/resume.ts`
+- PDF: `public/Chandan_Kumar_Resume.pdf`, built from `chandan_kumar_resume.tex` with `pdflatex`
+
+Edit both together so the two never disagree.
+
 ## Build
 
 ```bash

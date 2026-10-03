@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Briefcase, Code, FolderGit2, GraduationCap, House, Moon, Sun, User } from "lucide-react";
+import { Briefcase, Code, FileText, FolderGit2, House, Moon, Sun, User } from "lucide-react";
 
 const items = [
   { href: "#top", label: "Home", Icon: House },
@@ -9,7 +9,7 @@ const items = [
   { href: "#experience", label: "Work", Icon: Briefcase },
   { href: "#open-source", label: "Open Source", Icon: FolderGit2 },
   { href: "#projects", label: "Projects", Icon: Code },
-  { href: "#education", label: "Education", Icon: GraduationCap },
+  { href: "/resume", label: "Resume", Icon: FileText },
 ];
 
 type Theme = "light" | "dark";
