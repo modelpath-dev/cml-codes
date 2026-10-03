@@ -11,6 +11,7 @@ Built with Next.js 16 (App Router, Turbopack), TypeScript, Tailwind CSS v4, and 
 - **Styling**: Tailwind CSS v4
 - **Animation**: Motion (formerly Framer Motion)
 - **Fonts**: Geist Sans, Geist Mono, Instrument Serif
+- **Theme**: light/dark, follows the OS until toggled from the bottom dock
 
 ## Development
 
@@ -20,6 +21,16 @@ npm run dev
 ```
 
 Opens at `http://localhost:3000`.
+
+## Open-source contributions
+
+The "Open Source Contributions" section reads `src/lib/oss.json`, generated from GitHub:
+
+```bash
+node scripts/sync-oss.mjs   # uses $GITHUB_TOKEN, or `gh auth token` if unset
+```
+
+It collects every merged or open PR by `modelpath-dev` in public repos the account doesn't own, groups them by repo (several PRs in one repo render as a tree), and ranks repos by stars. Private repos and closed-unmerged PRs are skipped. Re-run it and commit the JSON to refresh the section.
 
 ## Build
 

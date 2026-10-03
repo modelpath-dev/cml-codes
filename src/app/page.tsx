@@ -1,29 +1,29 @@
-import ContactBar from "@/components/ContactBar";
-import Nav from "@/components/Nav";
-import Hero from "@/components/Hero";
-import Marquee from "@/components/Marquee";
-import Work from "@/components/Work";
+import Header from "@/components/Header";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
-import Contact from "@/components/Contact";
+import OpenSource from "@/components/OpenSource";
+import { Achievements, Education, Publications } from "@/components/Highlights";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
-import ScrollProgress from "@/components/ScrollProgress";
+import Dock from "@/components/Dock";
 
 export default function Home() {
   return (
     <>
-      <ScrollProgress />
-      <ContactBar />
-      <Nav />
-      <main className="flex-1">
-        <Hero />
-        <Marquee />
-        <Work />
+      <main className="mx-auto w-full max-w-4xl px-4 sm:px-6">
+        <Header />
         <About />
         <Experience />
-        <Contact />
+        <OpenSource />
+        <Projects />
+        <Publications />
+        <Achievements />
+        <Skills />
+        <Education />
+        <Footer />
       </main>
-      <Footer />
+      <Dock />
     </>
   );
 }
