@@ -14,7 +14,7 @@ const links = [
 
 export default function Header() {
   return (
-    <header id="top" className="flex items-start justify-between gap-6 pt-16 md:pt-20">
+    <header id="top" className="flex items-start justify-between gap-6 pt-24 md:pt-28">
       <div className="min-w-0">
         <h1 className="text-3xl font-semibold tracking-tight md:text-[2rem]">{profile.name}</h1>
         <p className="mt-2 max-w-md font-mono text-sm leading-relaxed text-muted">

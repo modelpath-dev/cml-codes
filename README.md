@@ -11,7 +11,7 @@ Built with Next.js 16 (App Router, Turbopack), TypeScript, Tailwind CSS v4, and 
 - **Styling**: Tailwind CSS v4
 - **Animation**: Motion (formerly Framer Motion)
 - **Fonts**: Geist Sans, Geist Mono, Instrument Serif
-- **Theme**: light/dark, follows the OS until toggled from the bottom dock
+- **Theme**: light/dark, follows the OS until toggled from the top navigation bar
 
 ## Development
 
@@ -34,7 +34,7 @@ It collects every merged PR by `modelpath-dev` in public repos the account doesn
 
 ## Resume
 
-`/resume` shows the resume as a web page, with a Download PDF button. The header and the bottom dock link to it.
+`/resume` shows the resume as a web page, with a Download PDF button. The header and the top navigation bar link to it.
 
 - Web view content: `src/lib/resume.ts`
 - PDF: `public/Chandan_Kumar_Resume.pdf`, built from `chandan_kumar_resume.tex` with `pdflatex`

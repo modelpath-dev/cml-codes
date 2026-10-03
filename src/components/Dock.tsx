@@ -37,7 +37,7 @@ export default function Dock() {
   return (
     <nav
       aria-label="Sections"
-      className="fixed inset-x-0 bottom-4 z-50 mx-auto flex w-fit max-w-[calc(100%-2rem)] items-center gap-0.5 rounded-full border border-border bg-background/90 p-1 shadow-lg shadow-black/5 backdrop-blur"
+      className="fixed inset-x-0 top-4 z-50 mx-auto flex w-fit max-w-[calc(100%-2rem)] items-center gap-0.5 rounded-full border border-border bg-background/90 p-1 shadow-lg shadow-black/5 backdrop-blur"
     >
       {items.map(({ href, label, Icon }) => (
         <a

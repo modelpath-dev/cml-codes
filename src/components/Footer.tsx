@@ -3,7 +3,7 @@ import oss from "@/lib/oss.json";
 
 export default function Footer() {
   return (
-    <footer className="mt-24 pb-28">
+    <footer className="mt-24 pb-12">
       <p
         aria-hidden
         className="select-none text-center text-[clamp(2.5rem,11vw,6.5rem)] font-semibold leading-none tracking-tighter text-foreground/[0.06]"
