@@ -16,6 +16,7 @@ export const profile = {
 export const experience = [
   {
     company: "NeuroFin.ai",
+    mark: "NF",
     role: "AI Engineer",
     period: "Sep 2025 to Present",
     location: "Onsite · Bengaluru",
@@ -26,6 +27,7 @@ export const experience = [
   },
   {
     company: "IIT Bombay · TuroCrate.ai",
+    mark: "TC",
     role: "ML Engineer",
     period: "Dec 2025 to Apr 2026",
     location: "Remote · Mumbai",
@@ -36,6 +38,7 @@ export const experience = [
   },
   {
     company: "IIT Ropar · Annam.ai",
+    mark: "AN",
     role: "AI Research Intern",
     period: "Jun 2025 to Jul 2025",
     location: "Onsite · Punjab",
@@ -46,6 +49,7 @@ export const experience = [
   },
   {
     company: "ISRO · LPSC",
+    mark: "IS",
     role: "Machine Learning Intern",
     period: "Jun 2024 to Jul 2024",
     location: "Onsite · Kerala",
@@ -124,6 +128,9 @@ export const projects: Project[] = [
   },
 ];
 
+export const about =
+  "Final-year CSE student at VIT Vellore, with internships at ISRO, IIT Ropar, IIT Bombay, and AI startups. I obsess over the path from notebook to deployed system: latency, model size, retrieval quality, and the boring infra glue that makes models actually useful. I also send fixes upstream to the open-source ML stack I build on.";
+
 export const skillGroups = [
   {
     label: "Deep Learning",
@@ -161,12 +168,6 @@ export const achievements: Achievement[] = [
     year: "2026",
   },
   {
-    title: "Published Paper · PICC 2025 (IEEE)",
-    detail: "Automated Ranking of Video Frames Based on Clarity",
-    year: "Oct 2025",
-    link: "https://ieeexplore.ieee.org/document/11291360",
-  },
-  {
     title: "Outreach Head · IEEE SPS, VIT",
     detail: "Organized 5+ technical workshops",
     year: "2024",
@@ -175,5 +176,22 @@ export const achievements: Achievement[] = [
     title: "7th Rank · CodeChef-VIT Hackathon",
     detail: "Top 2% among 400+ teams",
     year: "Feb 2023",
+  },
+];
+
+export const publications = [
+  {
+    title: "Automated Ranking of Video Frames Based on Clarity",
+    venue: "IEEE PICC 2025",
+    date: "Oct 2025",
+    link: "https://ieeexplore.ieee.org/document/11291360",
+  },
+];
+
+export const education = [
+  {
+    school: "VIT Vellore",
+    degree: "Computer Science and Engineering",
+    period: "Final year",
   },
 ];
