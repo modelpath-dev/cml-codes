@@ -1,14 +1,53 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FAF8F4;
-  --background-soft: #F2EFE8;
-  --foreground: #1C1C1A;
-  --muted: #6B6962;
-  --accent: #4F46E5;
-  --accent-soft: #E0E7FF;
-  --border: #E8E4DB;
-  --paper: #FFFFFF;
+  --background: #ffffff;
+  --background-soft: #f6f6f5;
+  --foreground: #111111;
+  --muted: #6b6b6b;
+  --accent: #4f46e5;
+  --accent-soft: #e0e7ff;
+  --border: #e9e9e7;
+  --chip: #f1f1ef;
+  --paper: #ffffff;
+  --merged: #8250df;
+  --open: #1a7f37;
+  --add: #1a7f37;
+  --del: #cf222e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --background: #0b0b0c;
+    --background-soft: #151517;
+    --foreground: #ededed;
+    --muted: #9a9a9a;
+    --accent: #818cf8;
+    --accent-soft: #1e1b4b;
+    --border: #232326;
+    --chip: #1c1c1f;
+    --paper: #ffffff;
+    --merged: #a371f7;
+    --open: #3fb950;
+    --add: #3fb950;
+    --del: #f85149;
+  }
+}
+
+:root[data-theme="dark"] {
+  --background: #0b0b0c;
+  --background-soft: #151517;
+  --foreground: #ededed;
+  --muted: #9a9a9a;
+  --accent: #818cf8;
+  --accent-soft: #1e1b4b;
+  --border: #232326;
+  --chip: #1c1c1f;
+  --paper: #ffffff;
+  --merged: #a371f7;
+  --open: #3fb950;
+  --add: #3fb950;
+  --del: #f85149;
 }
 
 @theme inline {
@@ -19,7 +58,12 @@
   --color-accent: var(--accent);
   --color-accent-soft: var(--accent-soft);
   --color-border: var(--border);
+  --color-chip: var(--chip);
   --color-paper: var(--paper);
+  --color-merged: var(--merged);
+  --color-open: var(--open);
+  --color-add: var(--add);
+  --color-del: var(--del);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-serif: var(--font-instrument);
@@ -28,93 +72,26 @@
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
-  font-feature-settings: "ss01", "cv11";
 }
 
 ::selection {
-  background: var(--accent);
+  background: var(--foreground);
   color: var(--background);
 }
 
-/* Subtle grain overlay */
-.grain {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 100;
-  opacity: 0.035;
-  mix-blend-mode: multiply;
-  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
-}
-
-/* Reveal mask for text */
-.reveal-mask {
-  display: inline-block;
-  overflow: hidden;
-  vertical-align: bottom;
-}
-
-/* Gradient orb */
-.orb {
-  position: absolute;
-  border-radius: 9999px;
-  filter: blur(80px);
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-/* Marquee */
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
-.marquee {
-  animation: marquee 40s linear infinite;
-}
-
-/* Hide scrollbar on marquee */
-.no-scrollbar::-webkit-scrollbar { display: none; }
-.no-scrollbar { scrollbar-width: none; }
-
-/* Smooth focus rings */
 :focus-visible {
   outline: 2px solid var(--accent);
-  outline-offset: 3px;
+  outline-offset: 2px;
   border-radius: 4px;
 }
-
-/* Project card sheen */
-.sheen {
-  position: relative;
-  overflow: hidden;
-}
-.sheen::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(115deg, transparent 30%, rgba(255,255,255,0.4) 50%, transparent 70%);
-  transform: translateX(-100%);
-  transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
-  pointer-events: none;
-}
-.sheen:hover::before {
-  transform: translateX(100%);
-}
-
-/* Custom scroll bar */
-::-webkit-scrollbar { width: 10px; height: 10px; }
-::-webkit-scrollbar-track { background: var(--background); }
-::-webkit-scrollbar-thumb { background: var(--border); border-radius: 8px; border: 2px solid var(--background); }
-::-webkit-scrollbar-thumb:hover { background: var(--muted); }
