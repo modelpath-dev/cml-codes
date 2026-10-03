@@ -22,8 +22,8 @@ const instrument = Instrument_Serif({
 export const metadata: Metadata = {
   title: "Chandan Kumar · AI/ML Engineer",
   description:
-    "AI/ML Engineer building production systems across LLMs, RAG, Computer Vision, and NLP. Ship models, not just notebooks.",
-  metadataBase: new URL("https://chandan.dev"),
+    "AI/ML Engineer building production systems across LLMs, RAG, Computer Vision, and NLP. Open-source contributor to DeepSpeed, ESPnet, LLamaSharp and more.",
+  metadataBase: new URL("https://cml-codes.vercel.app"),
   openGraph: {
     title: "Chandan Kumar · AI/ML Engineer",
     description:
@@ -31,6 +31,9 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Applies a saved theme before first paint so the page never flashes the wrong one.
+const themeScript = `try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}`;
 
 export default function RootLayout({
   children,
@@ -40,12 +43,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} ${instrument.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground">
-        <div className="grain" aria-hidden />
-        {children}
-      </body>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
+      <body className="min-h-full bg-background text-foreground">{children}</body>
     </html>
   );
 }
