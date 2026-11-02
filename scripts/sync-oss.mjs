@@ -12,9 +12,12 @@ const GROUP_INTO = { "sw005320/espnet-1": "espnet/espnet" };
 // Highest reputation first. `org` is shown on the card; repos in no tier sort last.
 const TIERS = [
   { org: "Microsoft", repos: ["deepspeedai/DeepSpeed", "microsoft/apm"] },
+  { org: "Hugging Face", repos: ["huggingface/speech-to-speech"] },
   { org: "Carnegie Mellon University", repos: ["espnet/espnet"] },
   { org: "Alibaba Qwen", repos: ["QwenAudio/SenseVoice"] },
   { org: "University of Hong Kong", repos: ["HKUDS/Vibe-Trading"] },
+  { org: "TU Munich", repos: ["TUM-Dev/gocast"] },
+  { org: "Inria · Paris Brain Institute", repos: ["aramis-lab/clinicadl"] },
   { repos: ["superlinked/sie", "strukto-ai/mirage"] },
   { repos: ["SciSharp/LLamaSharp", "nextlevelbuilder/goclaw"] },
 ];

@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-03",
+  "syncedAt": "2026-11-02",
   "repos": [
     {
       "name": "deepspeedai/DeepSpeed",
@@ -7,8 +7,8 @@
       "url": "https://github.com/deepspeedai/DeepSpeed",
       "avatar": "https://avatars.githubusercontent.com/u/74068820?v=4",
       "description": "DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.",
-      "stars": 43172,
-      "forks": 5025,
+      "stars": 43281,
+      "forks": 5059,
       "language": "Python",
       "prs": [
         {
@@ -28,8 +28,8 @@
       "url": "https://github.com/microsoft/apm",
       "avatar": "https://avatars.githubusercontent.com/u/6154722?v=4",
       "description": "Agent Package Manager",
-      "stars": 3931,
-      "forks": 385,
+      "stars": 4172,
+      "forks": 412,
       "language": "Python",
       "prs": [
         {
@@ -44,13 +44,34 @@
       ]
     },
     {
+      "name": "huggingface/speech-to-speech",
+      "org": "Hugging Face",
+      "url": "https://github.com/huggingface/speech-to-speech",
+      "avatar": "https://avatars.githubusercontent.com/u/25720743?v=4",
+      "description": "Build voice agents with open-source models",
+      "stars": 13616,
+      "forks": 1683,
+      "language": "Python",
+      "prs": [
+        {
+          "number": 722,
+          "title": "Expose VAD threshold and barge-in controls in the packaged audio client",
+          "url": "https://github.com/huggingface/speech-to-speech/pull/722",
+          "date": "2026-10-30",
+          "additions": 237,
+          "deletions": 6,
+          "files": 13
+        }
+      ]
+    },
+    {
       "name": "espnet/espnet",
       "org": "Carnegie Mellon University",
       "url": "https://github.com/espnet/espnet",
       "avatar": "https://avatars.githubusercontent.com/u/34493687?v=4",
       "description": "End-to-End Speech Processing Toolkit",
-      "stars": 9976,
-      "forks": 2440,
+      "stars": 10001,
+      "forks": 2444,
       "language": "Python",
       "prs": [
         {
@@ -79,8 +100,8 @@
       "url": "https://github.com/QwenAudio/SenseVoice",
       "avatar": "https://avatars.githubusercontent.com/u/167062371?v=4",
       "description": "Open-source SenseVoiceSmall model for Mandarin, Cantonese, English, Japanese, and Korean ASR, language ID, emotion recognition, and audio event detection.",
-      "stars": 9429,
-      "forks": 835,
+      "stars": 9663,
+      "forks": 844,
       "language": "C",
       "prs": [
         {
@@ -100,8 +121,8 @@
       "url": "https://github.com/HKUDS/Vibe-Trading",
       "avatar": "https://avatars.githubusercontent.com/u/118165258?v=4",
       "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-      "stars": 34487,
-      "forks": 5606,
+      "stars": 37380,
+      "forks": 6045,
       "language": "Python",
       "prs": [
         {
@@ -116,12 +137,54 @@
       ]
     },
     {
+      "name": "TUM-Dev/gocast",
+      "org": "TU Munich",
+      "url": "https://github.com/TUM-Dev/gocast",
+      "avatar": "https://avatars.githubusercontent.com/u/4400381?v=4",
+      "description": "TUMs lecture streaming service.",
+      "stars": 263,
+      "forks": 64,
+      "language": "Go",
+      "prs": [
+        {
+          "number": 2078,
+          "title": "fix(frontend): show the time until the next lecture in hours and minutes",
+          "url": "https://github.com/TUM-Dev/gocast/pull/2078",
+          "date": "2026-10-15",
+          "additions": 35,
+          "deletions": 4,
+          "files": 4
+        }
+      ]
+    },
+    {
+      "name": "aramis-lab/clinicadl",
+      "org": "Inria · Paris Brain Institute",
+      "url": "https://github.com/aramis-lab/clinicadl",
+      "avatar": "https://avatars.githubusercontent.com/u/49677641?v=4",
+      "description": "Open-source Python library for reproducible deep learning in neuroimaging",
+      "stars": 192,
+      "forks": 66,
+      "language": "Python",
+      "prs": [
+        {
+          "number": 970,
+          "title": "Add GeneratedBy to the dataset_description.json of tensors",
+          "url": "https://github.com/aramis-lab/clinicadl/pull/970",
+          "date": "2026-10-30",
+          "additions": 16,
+          "deletions": 0,
+          "files": 2
+        }
+      ]
+    },
+    {
       "name": "strukto-ai/mirage",
       "url": "https://github.com/strukto-ai/mirage",
       "avatar": "https://avatars.githubusercontent.com/u/248286111?v=4",
       "description": "The World's First Virtual Terminal for AI Agents",
-      "stars": 3677,
-      "forks": 272,
+      "stars": 3762,
+      "forks": 278,
       "language": "TypeScript",
       "prs": [
         {
@@ -149,8 +212,8 @@
       "url": "https://github.com/superlinked/sie",
       "avatar": "https://avatars.githubusercontent.com/u/94243920?v=4",
       "description": "Open-source inference server and production cluster for all the models your agent needs.",
-      "stars": 3358,
-      "forks": 318,
+      "stars": 3459,
+      "forks": 328,
       "language": "Python",
       "prs": [
         {
@@ -169,10 +232,19 @@
       "url": "https://github.com/SciSharp/LLamaSharp",
       "avatar": "https://avatars.githubusercontent.com/u/44989469?v=4",
       "description": "A C#/.NET library to run LLM (🦙LLaMA/LLaVA) on your local device efficiently.",
-      "stars": 3809,
-      "forks": 513,
+      "stars": 3823,
+      "forks": 516,
       "language": "C#",
       "prs": [
+        {
+          "number": 1441,
+          "title": "feat(cuda): add LLamaSharp.Backend.Cuda13 packages",
+          "url": "https://github.com/SciSharp/LLamaSharp/pull/1441",
+          "date": "2026-10-14",
+          "additions": 143,
+          "deletions": 0,
+          "files": 6
+        },
         {
           "number": 1440,
           "title": "feat(cuda): probe cuda13 native libraries before cuda12",
@@ -207,8 +279,8 @@
       "url": "https://github.com/nextlevelbuilder/goclaw",
       "avatar": "https://avatars.githubusercontent.com/u/246974152?v=4",
       "description": "GoClaw - GoClaw is OpenClaw rebuilt in Go — with multi-tenant isolation, 5-layer security, and native concurrency. Deploy AI agent teams at scale without compromising on safety.",
-      "stars": 3640,
-      "forks": 1063,
+      "stars": 3695,
+      "forks": 1078,
       "language": "Go",
       "prs": [
         {
@@ -227,8 +299,8 @@
       "url": "https://github.com/Thysrael/Horizon",
       "avatar": "https://avatars.githubusercontent.com/u/72613958?v=4",
       "description": "📡 Your own AI-powered news radar. Generates daily briefings in English & Chinese. | 用 AI 构建你专属的新闻雷达",
-      "stars": 9547,
-      "forks": 1473,
+      "stars": 11131,
+      "forks": 1669,
       "language": "Python",
       "prs": [
         {
@@ -243,20 +315,80 @@
       ]
     },
     {
-      "name": "roy-tong/AgentMeasure",
-      "url": "https://github.com/roy-tong/AgentMeasure",
+      "name": "walkinglabs/hands-on-modern-rl",
+      "url": "https://github.com/walkinglabs/hands-on-modern-rl",
+      "avatar": "https://avatars.githubusercontent.com/u/271878417?v=4",
+      "description": "🚀 An open-source, hands-on curriculum bridging the gap from basic RL concepts to LLM alignment, RLVR, and advanced Agentic systems. ",
+      "stars": 4837,
+      "forks": 354,
+      "language": "Jupyter Notebook",
+      "prs": [
+        {
+          "number": 87,
+          "title": "Align PyTorch PPO ep_rew_mean with SB3's 100-episode window",
+          "url": "https://github.com/walkinglabs/hands-on-modern-rl/pull/87",
+          "date": "2026-10-20",
+          "additions": 29,
+          "deletions": 15,
+          "files": 6
+        }
+      ]
+    },
+    {
+      "name": "LazyAGI/LazyLLM",
+      "url": "https://github.com/LazyAGI/LazyLLM",
+      "avatar": "https://avatars.githubusercontent.com/u/171651681?v=4",
+      "description": "Easiest and laziest way for  building multi-agent LLMs applications.",
+      "stars": 3889,
+      "forks": 427,
+      "language": "Python",
+      "prs": [
+        {
+          "number": 1324,
+          "title": "feat(flow): trace Switch and Loop condition callbacks",
+          "url": "https://github.com/LazyAGI/LazyLLM/pull/1324",
+          "date": "2026-10-12",
+          "additions": 143,
+          "deletions": 7,
+          "files": 7
+        }
+      ]
+    },
+    {
+      "name": "roy-tong/Verovo",
+      "url": "https://github.com/roy-tong/Verovo",
       "avatar": "https://avatars.githubusercontent.com/u/196586291?v=4",
-      "description": "Open measurement infrastructure for AI agents. Our audit of 110+ usage tools found 45+ verified billing bugs, with 23 fixes merged or accepted upstream (openlit, langfuse, codeburn, toktrack and more) and external real-world cases landing as conformance evidence. PASS / FAIL / UNPROVABLE in CI.",
-      "stars": 218,
-      "forks": 5,
+      "description": "AI financial audit and task economics: connect usage, supplier charges and business outcomes to calculate task costs, cost per verified success and ROI.",
+      "stars": 220,
+      "forks": 10,
       "language": "Python",
       "prs": [
         {
           "number": 22,
           "title": "evidence: live / replay / synthetic latency basis fixture",
-          "url": "https://github.com/roy-tong/AgentMeasure/pull/22",
+          "url": "https://github.com/roy-tong/Verovo/pull/22",
           "date": "2026-09-21",
           "additions": 155,
+          "deletions": 0,
+          "files": 2
+        }
+      ]
+    },
+    {
+      "name": "zxcalc/zxlive",
+      "url": "https://github.com/zxcalc/zxlive",
+      "avatar": "https://avatars.githubusercontent.com/u/916384?v=4",
+      "description": "A graphical tool for the ZX calculus",
+      "stars": 106,
+      "forks": 56,
+      "language": "Python",
+      "prs": [
+        {
+          "number": 616,
+          "title": "Snap patterns inserted at the cursor to the grid",
+          "url": "https://github.com/zxcalc/zxlive/pull/616",
+          "date": "2026-10-15",
+          "additions": 19,
           "deletions": 0,
           "files": 2
         }
