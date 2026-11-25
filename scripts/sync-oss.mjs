@@ -11,9 +11,9 @@ const AUTHOR = "modelpath-dev";
 const GROUP_INTO = { "sw005320/espnet-1": "espnet/espnet" };
 // Highest reputation first. `org` is shown on the card; repos in no tier sort last.
 const TIERS = [
-  { org: "Microsoft", repos: ["deepspeedai/DeepSpeed", "microsoft/apm"] },
-  { org: "Hugging Face", repos: ["huggingface/speech-to-speech"] },
+  { org: "Hugging Face", repos: ["huggingface/speech-to-speech", "huggingface/text-embeddings-inference"] },
   { org: "Carnegie Mellon University", repos: ["espnet/espnet"] },
+  { org: "Microsoft", repos: ["deepspeedai/DeepSpeed", "microsoft/apm"] },
   { org: "Alibaba Qwen", repos: ["QwenAudio/SenseVoice"] },
   { org: "University of Hong Kong", repos: ["HKUDS/Vibe-Trading"] },
   { org: "TU Munich", repos: ["TUM-Dev/gocast"] },

@@ -30,7 +30,7 @@ The "Open Source Contributions" section reads `src/lib/oss.json`, generated from
 node scripts/sync-oss.mjs   # uses $GITHUB_TOKEN, or `gh auth token` if unset
 ```
 
-It collects every merged PR by `modelpath-dev` in public repos the account doesn't own, groups them by repo (several PRs in one repo render as a tree), and ranks repos by the organization behind them (the `TIERS` list in the script), then by stars. Private repos and unmerged PRs are skipped. Re-run it and commit the JSON to refresh the section.
+It collects every merged PR by `modelpath-dev` in public repos the account doesn't own, groups them by repo (several PRs in one repo render as a tree), and ranks repos by the organization behind them (the `TIERS` list in the script), then by stars. Hugging Face projects appear first, followed by ESPnet, Microsoft, and the remaining organizations. Private repos and unmerged PRs are skipped. Re-run it and commit the JSON to refresh the section.
 
 ## Resume
 
